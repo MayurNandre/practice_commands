@@ -1,0 +1,15 @@
+   name: my demo workflow
+
+   on:
+     push:
+       branches: [main]
+
+   jobs:
+     demo:
+       runs-on: ubuntu-latest
+
+       steps:
+         - name: greetings
+           run: echo "code is pushed and this workflow is executed !"
+           
+        
